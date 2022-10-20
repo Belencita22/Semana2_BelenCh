@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Semana2_BelenCh.Page1">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Sistema de calificaciones"
+                HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+            <Label Text="Parcial 1"
+                HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+            <Label Text="Usuario logeado como:" HorizontalTextAlignment="Center" TextColor="DarkRed" FontSize="12"/>
+            <Label x:Name="lblUsuario" HorizontalTextAlignment="Center" TextColor="DarkSlateBlue" FontSize="13"/>
+            <Label x:Name="lblPass" HorizontalTextAlignment="Center" TextColor="DarkSlateBlue" FontSize="13" />
+            <Frame BackgroundColor="Black" Padding="15" CornerRadius="0">
+                 <Label Text="Calcular Notas" HorizontalTextAlignment="Center" TextColor="White" FontSize="14"/>
+                
+            </Frame>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Nota seguimiento 1" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="TxtNota1" Placeholder="Nota seguimiento 1" Grid.Row="0" Grid.Column="1" TextChanged="TxtNota1_TextChanged" TextColor="Black"/>
+                <Label Text="Nota examen1" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="TxtExamen1" Placeholder="Nota examen1" Grid.Row="1" Grid.Column="1" TextChanged="TxtExamen1_TextChanged" TextColor="Black"/>
+            </Grid>
+            <Button x:Name="BtnCalcular" Text="Calcular parcial 1" Clicked="BtnCalcular_Clicked"/>
+            <Entry x:Name="txtParcial1" IsEnabled="False" Placeholder="Su nota parcial 1 es:"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Nota seguimiento 2" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtNota2" Placeholder="Nota seguimiento 2" Grid.Row="0" Grid.Column="1" TextChanged="txtNota2_TextChanged"/>
+                <Label Text="Nota examen 2" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="TxtExamen2" Placeholder="Nota examen1" Grid.Row="1" Grid.Column="1" TextChanged="TxtExamen2_TextChanged"/>
+            </Grid>
+            <Button x:Name="BtnCalcular2" Text="Calcular parcial 2" Clicked="BtnCalcular2_Clicked"/>
+            <Entry x:Name="txtParcial2" IsEnabled="False" Placeholder="Su nota parcial 2 es:"/>
+
+
+            <Button x:Name="btnPromedio" Text="Promedio Final" Clicked="btnPromedio_Clicked"/>
+            <Label Text="Su nota es:"/>
+            <Entry x:Name="txtTotal" IsEnabled="False"/>
+            <Label Text="Usted esta:"/>
+            <Entry x:Name="txtEstado" IsEnabled="False"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

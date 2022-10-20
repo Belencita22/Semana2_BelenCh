@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Semana2_BelenCh.Login1">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="ventana Login" FontSize="Medium" />
+            <Entry x:Name="txtUsuario" Placeholder="Ingrese usuario"/>
+            <Entry x:Name="txtContrasena" Placeholder="ingrese la contraseña"/>
+            <Button x:Name="btnIniciar" Text="INICIAR" Clicked="btnIniciar_Clicked"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
