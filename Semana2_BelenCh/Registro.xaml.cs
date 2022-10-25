@@ -21,8 +21,8 @@ namespace Semana2_BelenCh
 
         private async void btnIniciar_Clicked(object sender, EventArgs e)
         {
-            string nombre = "Belen";
-            string clave = "1234";
+            string nombre = "estudiante2022";
+            string clave = "uisrael2022";
 
             string TNombre = txtNombre.Text;
             string TClave = txtClave.Text;
